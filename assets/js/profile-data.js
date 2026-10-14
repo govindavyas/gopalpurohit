@@ -6,7 +6,7 @@
 window.PROFILE_DATA = {
   "astrologer": {
     "name": "Pandit Gopal Purohit",
-    "shortName": "Gopal Bhaiya",
+    "shortName": "Gopal",
     "title": "Senior Jyotish Margdarshak • Hingoli",
     "experienceYears": "15+",
     "horoscopesAnalyzed": "2,500+",
@@ -14,15 +14,15 @@ window.PROFILE_DATA = {
   },
   "business": {
     "name": "Jyotish Margdarshan",
-    "subtitleHindi": "ज्योतिष मार्गदर्शन • हिंगोली",
-    "sanskritMotto": "|| शुभं करोति कल्याणम् ||",
+    "subtitleHindi": "ज्योतिष मार्गदर्शन • हिंगोली, महाराष्ट्र",
+    "sanskritMotto": "|| मङ्गलम् भगवान विष्णुः, मङ्गलम् गरुडध्वजः। मङ्गलम् पुण्डरी काक्षः, मङ्गलाय तनो हरिः॥ ||",
     "tagline": "Unlock Your Destiny with Sacred Vedic Wisdom"
   },
   "contact": {
-    "phone": "+91 94030 17886",
-    "phoneDisplay": "094030 17886",
-    "phoneRaw": "+919403017886",
-    "whatsappNumber": "919403017886",
+    "phone": "+91 95958 95950",
+    "phoneDisplay": "095958 95950",
+    "phoneRaw": "+919595895950",
+    "whatsappNumber": "919595895950",
     "email": "gopalpurohit3187@gmail.com"
   },
   "location": {

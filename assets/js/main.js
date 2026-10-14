@@ -1,7 +1,7 @@
 /**
  * Jyotish Margdarshan - Interactive JavaScript
- * Astrologer: Pandit Gopal Purohit (Gopal Bhaiya)
- * Hingoli, Maharashtra | +91 94030 17886
+ * Astrologer: Pandit Gopal Purohit (Gopal)
+ * Hingoli, Maharashtra | +91 95958 95950
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -434,7 +434,7 @@ function initBookingForms() {
       const profile = window.CURRENT_PROFILE || window.PROFILE_DATA || {};
       const astroName = profile.astrologer?.name || 'Pandit Gopal Purohit';
       const bizName = profile.business?.name || 'Jyotish Margdarshan';
-      const waNumber = profile.contact?.whatsappNumber || '919403017886';
+      const waNumber = profile.contact?.whatsappNumber || '919595895950';
 
       // Construct formatted WhatsApp message
       const text = `Namaste ${astroName} ji,
