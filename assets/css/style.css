@@ -374,9 +374,67 @@ button, input, select, textarea {
 /* ==========================================================================
    HERO SECTION
    ========================================================================== */
+.spiritual-marquee {
+  margin-top: 76px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 234, 159, 0.35);
+  border-bottom: 1px solid rgba(255, 234, 159, 0.35);
+  background: linear-gradient(90deg, rgba(62, 37, 14, 0.96), rgba(24, 22, 39, 0.98) 50%, rgba(62, 37, 14, 0.96));
+  box-shadow: 0 4px 24px rgba(242, 201, 76, 0.12), inset 0 0 22px rgba(242, 201, 76, 0.06);
+  color: var(--gold-light);
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.spiritual-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: spiritual-marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.spiritual-marquee-group {
+  flex: none;
+  padding: 0.7rem 1.5rem 0.7rem 0;
+}
+
+.spiritual-marquee:hover .spiritual-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes spiritual-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333333%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spiritual-marquee-track {
+    width: 100%;
+    animation: none;
+  }
+
+  .spiritual-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .spiritual-marquee-group:first-child {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+.mobile-drawer {
+  display: none;
+}
+
 .hero-section {
   position: relative;
-  padding-top: calc(76px + 4rem);
+  padding-top: 4rem;
   padding-bottom: 5.5rem;
   overflow: hidden;
   background: radial-gradient(circle at 50% 10%, #161c3a 0%, #080a14 70%);
@@ -1757,6 +1815,7 @@ textarea.form-control {
     z-index: 999;
     border-top: 1px solid var(--border-subtle);
     overflow-y: auto;
+    display: flex;
   }
   .mobile-drawer.open {
     transform: translateX(0);
