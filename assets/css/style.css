@@ -127,7 +127,7 @@ button, input, select, textarea {
 .sanskrit-sub {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.12em;
-  font-size: 0.9rem;
+  font-size: 1.20rem;
   color: var(--gold-primary);
   text-transform: uppercase;
   font-weight: 600;
