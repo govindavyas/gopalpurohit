@@ -1,7 +1,7 @@
 /**
  * Jyotish Margdarshan - Interactive JavaScript
  * Astrologer: Pandit Gopal Purohit (Gopal)
- * Hingoli, Maharashtra | +91 95958 95950
+ * Profile and contact details are loaded from profile.json.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -426,15 +426,19 @@ function initBookingForms() {
       const phone = form.querySelector('[name="phone"]')?.value.trim() || '';
       const dob = form.querySelector('[name="dob"]')?.value.trim() || 'Not specified';
       const tob = form.querySelector('[name="tob"]')?.value.trim() || 'Not specified';
-      const pob = form.querySelector('[name="pob"]')?.value.trim() || 'Hingoli';
+      const pob = form.querySelector('[name="pob"]')?.value.trim() || '';
       const service = form.querySelector('[name="service"]')?.value || 'Astrology Reading';
       const message = form.querySelector('[name="message"]')?.value.trim() || 'Seeking horoscope consultation.';
 
       // Use dynamic profile details from profile.json
-      const profile = window.CURRENT_PROFILE || window.PROFILE_DATA || {};
-      const astroName = profile.astrologer?.name || 'Pandit Gopal Purohit';
-      const bizName = profile.business?.name || 'Jyotish Margdarshan';
-      const waNumber = profile.contact?.whatsappNumber || '919595895950';
+      const profile = window.CURRENT_PROFILE;
+      if (!profile?.contact?.phone || !profile.astrologer?.name || !profile.business?.name) {
+        alert('Profile details are not loaded yet. Please try again in a moment.');
+        return;
+      }
+      const astroName = profile.astrologer.name;
+      const bizName = profile.business.name;
+      const waNumber = profile.contact.phone.replace(/\D/g, '');
 
       // Construct formatted WhatsApp message
       const text = `Namaste ${astroName} ji,
@@ -506,7 +510,7 @@ function initReviewSystem() {
   reviewForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('rev-name').value.trim() || 'Devotee';
-    const location = document.getElementById('rev-loc').value.trim() || 'Hingoli';
+    const location = document.getElementById('rev-loc').value.trim() || window.CURRENT_PROFILE?.location?.city || '';
     const text = document.getElementById('rev-text').value.trim();
     const rating = document.getElementById('rev-rating').value || '5';
 

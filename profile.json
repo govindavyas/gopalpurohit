@@ -5,7 +5,7 @@
     "title": "Senior Jyotish Margdarshak • Hingoli",
     "experienceYears": "22+",
     "horoscopesAnalyzed": "2,500+",
-    "rating": "4.9"
+    "rating": "5.0"
   },
   "business": {
     "name": "Jyotish Margdarshan",
@@ -15,9 +15,6 @@
   },
   "contact": {
     "phone": "+91 95958 95950",
-    "phoneDisplay": "095958 95950",
-    "phoneRaw": "+919595895950",
-    "whatsappNumber": "919595895950",
     "email": "gopalpurohit3187@gmail.com"
   },
   "location": {
@@ -26,13 +23,14 @@
     "district": "Hingoli",
     "state": "Maharashtra",
     "postalCode": "431513",
-    "country": "India",
-    "formatted": "Hemraj Galli, Hingoli, Maharashtra 431513, India",
-    "mapsUrl": "https://maps.google.com/?q=Hemraj+Galli+Hingoli+Maharashtra+431513"
+    "country": "India"
+  },
+  "images": {
+    "hero": "assets/images/hero_original.jpg"
   },
   "hours": {
     "mondayFriday": "09:00 AM – 07:00 PM",
-    "saturday": "Special Appointments",
-    "sunday": "By Prior Appointment"
+    "saturday": "09:00 AM – 07:00 PM",
+    "sunday": "09:00 AM – 07:00 PM"
   }
 }

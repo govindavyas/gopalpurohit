@@ -127,7 +127,7 @@ button, input, select, textarea {
 .sanskrit-sub {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.12em;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--gold-primary);
   text-transform: uppercase;
   font-weight: 600;
@@ -507,6 +507,10 @@ button, input, select, textarea {
   aspect-ratio: 4 / 3;
 }
 
+.hero-profile-image {
+  aspect-ratio: 3 / 4;
+}
+
 .hero-image-wrap img {
   width: 100%;
   height: 100%;
@@ -715,7 +719,7 @@ button, input, select, textarea {
 }
 
 .service-hindi {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--saffron);
   margin-bottom: 0.85rem;
   font-weight: 600;
@@ -806,7 +810,7 @@ button, input, select, textarea {
 
 .about-portrait-card img {
   width: 100%;
-  height: 480px;
+  height: 620px;
   object-fit: cover;
 }
 
